@@ -9,7 +9,7 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 
 ### LOGIN SETTING DISINI ###
-boteater = LINE()##LOGIN LEWAT TOKEN           
+boteater = LINE('Et9K2hXsBoLIvOiHUVP8.PpgyChCcaP7Gv2jcdrsIEa.Yh1a+QgR9mV1T+t5VqUVjScsrZTUsJCJ89dvasgKSpQ=')##LOGIN LEWAT TOKEN           
 
 
 boteater.log("Auth Token : " + str(boteater.authToken))
