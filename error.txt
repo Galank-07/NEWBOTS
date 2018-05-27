@@ -1,0 +1,13 @@
+
+[<module 'time' (built-in)>] 'bool' object is not callable
+[<module 'time' (built-in)>] 'bool' object is not callable
+[<module 'time' (built-in)>] 'bool' object is not callable
+[<module 'time' (built-in)>] TalkException(code=10, reason='You are not related to group: cc2f2724245f669288b36ba1204da1fa8', parameterMap={'2': 'cc2f2724245f669288b36ba1204da1fa8'})
+[<module 'time' (built-in)>] 'NoneType' object is not iterable
+[<module 'time' (built-in)>] 'NoneType' object is not iterable
+[<module 'time' (built-in)>] TalkException(code=10, reason='You are not related to group: cc2f2724245f669288b36ba1204da1fa8', parameterMap={'2': 'cc2f2724245f669288b36ba1204da1fa8'})
+[<module 'time' (built-in)>] 'NoneType' object is not iterable
+[<module 'time' (built-in)>] 'autochecksticker'
+[<module 'time' (built-in)>] 'bool' object is not callable
+[<module 'time' (built-in)>] TalkException(code=73, reason='Prevented join by ticket: 1453457949, 639169922', parameterMap=None)
+[<module 'time' (built-in)>] TalkException(code=0, reason='Invalid size of contactIds', parameterMap=None)
