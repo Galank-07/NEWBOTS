@@ -38,7 +38,7 @@ myProfile["pictureStatus"] = boteaterProfile.pictureStatus
 ### KUMPULAN DEF ##
 
 def restartBot():
-    print (">BOTEATER SELFBOT TELAH DI RESTART<")
+    print (">SLACKBOT SELFBOT TELAH DI RESTART<")
     backupData()
     time.sleep(1)
     python = sys.executable
@@ -80,7 +80,7 @@ def lineBot(op):
         if op.type == 5:
             print ("INFO SELBOT : ADA YANG ADD")
             if settings["autoAdd"] == True:
-                boteater.sendMessage(op.param1, "=== SELFBOT BOTEATER V1.0 === \nTERIMAKASIH {} TELAH ADD SAYA".format(str(boteater.getContact(op.param1).displayName)))
+                boteater.sendMessage(op.param1, "=== SELFBOT SLACKBOT V1.0 === \nTERIMAKASIH {} TELAH ADD SAYA".format(str(boteater.getContact(op.param1).displayName)))
         if op.type == 13:
             print ("INFO SELBOT : ADA YANG INVITE GRUP")
             group = boteater.getGroup(op.param1)
@@ -109,26 +109,26 @@ def lineBot(op):
                     return
 
                 if text.lower() == 'help':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \nbotmenu \nsetting \nselfmenu \ngrupmenu \nmedia \ntokengen \nanimenew \nanimelist")
-                if text.lower() == 'tokengen':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \ntoken mac \ntoken ios \ntoken chrome \ntoken win10 \ntoken desktop \ntoken done")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nbotmenu \nsetting \nselfmenu \ngrupmenu \nmedia \ntokenlist \nanimenew \nanimelist")
+                if text.lower() == 'tokenlist':
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ntoken mac \ntoken ios \ntoken chrome \ntoken win10 \ntoken desktop \ntoken done")
                 elif text.lower() == 'botmenu':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \nrestart \nspeed \nstatus \nabout \nruntime \nerrorlog")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nrestart \nspeed \nstatus \nabout \nruntime \nerrorlog")
                 elif text.lower() == 'setting':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \nautoadd(on/off) \nautoread(on/off) \nautojoin(on/off) \nautoleave(on/off) \nautochecksticker(on/off) \ndetectmention(on/off)")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nautoadd(on/off) \nautoread(on/off) \nautojoin(on/off) \nautoleave(on/off) \nautochecksticker(on/off) \ndetectmention(on/off)")
                 elif text.lower() == 'selfmenu':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \nme \nmymid \nmypicture \nmyvideo \nmycover \nstealcontact(mention) \nstealmid(mention) \nstealbio(mention) \nstealpicture(mention) \nstealvideoprofile(mention) \nstealcover(mention) \ncloneprofile(mention) \nrestoreprofile \nmention")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nme \nmymid \nmypicture \nmyvideo \nmycover \nstealcontact(mention) \nstealmid(mention) \nstealbio(mention) \nstealpicture(mention) \nstealvideoprofile(mention) \nstealcover(mention) \ncloneprofile(mention) \nrestoreprofile \nmention")
                 elif text.lower() == 'grupmenu':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \ngcreator \ngpicture \nglink \nqr(on/off) \nglist \ngmember \nginfo \ncrash")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ngcreator \ngpicture \nglink \nqr(on/off) \nglist \ngmember \nginfo \ncrash")
                 elif text.lower() == 'media':
-                    boteater.sendMessage(to, "=== BOTEATER SELFBOT V.1 === \ninstagraminfo(username) \ninstagrampost(username) \nyoutubes(keyword) \nimage(keyword) \nssweb(link)")
+                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ninstagraminfo(username) \ninstagrampost(username) \nyoutubes(keyword) \nimage(keyword) \nssweb(link)")
 
 ### BOT MENU COMMAND ###
 
                     
                 elif text.lower() == 'speed':
                     start = time.time()
-                    boteater.sendMessage(to, "SPEED CHECK...")
+                    boteater.sendMessage(to, "█▒▒▒▒▒▒▒▒▒...")
                     elapsed_time = time.time() - start
                     boteater.sendMessage(to,format(str(elapsed_time)))
                 elif text.lower() == 'restart':
@@ -148,11 +148,11 @@ def lineBot(op):
                 elif text.lower() == 'about':
                     try:
                         arr = []
-                        saya = "uedcb4744c255b5cf5eb4a43f700a6c32"
+                        saya = "u78643d09e42a36836a17cc918963a8b7"
                         creator = boteater.getContact(saya)
                         ret_ = ">>> INFO BOT <<<"
                         ret_ += "\nSELFBOT PYTHON 3 BOTEATER V1.0"
-                        ret_ += "\nBOT INI MILIK BOTEATER TIDAK UNTUK DI PERJUAL BELIKAN!!! (GRATIS)"
+                        ret_ += "\nBOT INI MILIK SLACKBOT TIDAK UNTUK DI PERJUAL BELIKAN!!! (GRATIS)"
                         ret_ += "\nYANG BUAT : {}".format(creator.displayName)
                         ret_ += "\n===== IKLAN ===== \nSEDIA BERBAGAI MACAM VPS MURAH : https://lazybot.us"
                         boteater.sendMessage(to, str(ret_))
