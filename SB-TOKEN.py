@@ -1,5 +1,13 @@
 	# -*- coding: utf-8 -*-
 ### IMPORT MODUL ###
+#GUNAKAN DENGAN BIJAK GEND
+#JANGAN OTAK ATIK KALAU GAK MAU ERROR
+#SCRIPT GRATIS
+#JANGAN DI JUAL BELIKAN
+#         FROOM
+# ID LINE : fuck.you__
+#       『✍͡➴͜Ĝα₤αηĸ͜͡✫』
+
 from linepy import *
 from datetime import datetime
 from time import sleep
