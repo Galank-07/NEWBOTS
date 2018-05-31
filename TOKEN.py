@@ -98,7 +98,7 @@ def lineBot(op):
             print ("INFO SELBOT : LEAVE ROOM")
             if settings["autoLeave"] == True:
                 boteater.leaveRoom(op.param1)
-        if op.type == 25:
+        if op.type == 26:
             print ("INFO SELBOT : MENGIRIM PESAN")
             msg = op.message
             text = msg.text
@@ -121,15 +121,15 @@ def lineBot(op):
                 if text.lower() == '!tokenlist':
                     boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !token desktopmac \n╠⎆ !token ios \n╠⎆ !token chrome \n╠⎆ !token win10 \n╠⎆ !token desktopwin \n╠⎆ !done\n╰══════╬╬═══════╯")
                 elif text.lower() == '!botmenu':
-                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !restart \n !speed \n !status \n !about \n !runtime \n !errorlog")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !restart \n╠⎆ !speed \n╠⎆ !status \n╠⎆ !about \n╠⎆ !runtime \n╠⎆ !errorlog\n╰══════╬╬═══════╯")
                 elif text.lower() == '!setting':
-                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n autoadd(on/off) \n autoread(on/off) \n autojoin(on/off) \n autoleave(on/off) \n autochecksticker(on/off) \n detectmention(on/off)")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !autoadd(on/off) \n╠⎆ autoread(on/off) \n╠⎆ autojoin(on/off) \n╠⎆ autoleave(on/off) \n╠⎆ autochecksticker(on/off) \n╠⎆ detectmention(on/off)\n╰══════╬╬═══════╯")
                 elif text.lower() == '!self':
-                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !me \n !mymid \n !mypicture \n !myvideo \n !mycover \n !stealcontact(mention) \n !stealmid(mention) \n !stealbio(mention) \n !stealpicture(mention) \n !stealvideoprofile(mention) \n !stealcover(mention) \n !cloneprofile(mention) \n !restoreprofile \n !mention")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !me \n╠⎆ !mymid \n╠⎆ !mypicture \n╠⎆ !myvideo \n !mycover \n╠⎆ !stealcontact(mention) \n╠⎆ !stealmid(mention) \n╠⎆ !stealbio(mention) \n╠⎆ !stealpicture(mention) \n╠⎆ !stealvideoprofile(mention) \n╠⎆ !stealcover(mention) \n╠⎆ !cloneprofile(mention) \n╠⎆ !restoreprofile \n╠⎆ !mention\n╰══════╬╬═══════╯")
                 elif text.lower() == '!group':
-                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !gcreator \n !gpicture \n !glink \n !qr(on/off) \n !glist \n !gmember \n !ginfo \n !crash")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !gcreator \n╠⎆ !gpicture \n╠⎆ !glink \n╠⎆ !qr(on/off) \n╠⎆ !glist \n╠⎆ !gmember \n╠⎆ !ginfo \n╠⎆ !crash\n╰══════╬╬═══════╯")
                 elif text.lower() == '!media':
-                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !instagraminfo(username) \n !instagrampost(username) \n !youtubes(keyword) \n !image(keyword) \n !ssweb(link)")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !instagraminfo(username) \n╠⎆ !instagrampost(username) \n╠⎆ !youtubes(keyword) \n╠⎆ !image(keyword) \n╠⎆ !ssweb(link)\n╰══════╬╬═══════╯")
 
 ### BOT MENU COMMAND ###
 
@@ -803,7 +803,7 @@ def lineBot(op):
                     
 
 
-        if op.type == 26:
+        if op.type == 25:
             print ("PENSAN TELAH DI TERIMA!!!")
             msg = op.message
             text = msg.text
