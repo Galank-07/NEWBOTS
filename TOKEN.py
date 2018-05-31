@@ -117,7 +117,7 @@ def lineBot(op):
                     return
 
                 if text.lower() == 'help':
-                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !bot menu \n╠⎆ !setting \n╠⎆ !self \n╠⎆ !group \n╠⎆ !media \n╠⎆ !tokenlist \╠⎆ !nanimenew \n╠⎆ !nanimelist\n╰══════╬╬═══════╯")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !bot menu \n╠⎆ !setting \n╠⎆ !self \n╠⎆ !group \n╠⎆ !media \n╠⎆ !tokenlist \n╠⎆ !nanimenew \n╠⎆ !nanimelist\n╰══════╬╬═══════╯")
                 if text.lower() == '!tokenlist':
                     boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !token desktopmac \n╠⎆ !token ios \n╠⎆ !token chrome \n╠⎆ !token win10 \n╠⎆ !token desktopwin \n╠⎆ !done\n╰══════╬╬═══════╯")
                 elif text.lower() == '!botmenu':
@@ -125,7 +125,7 @@ def lineBot(op):
                 elif text.lower() == '!setting':
                     boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !autoadd(on/off) \n╠⎆ autoread(on/off) \n╠⎆ autojoin(on/off) \n╠⎆ autoleave(on/off) \n╠⎆ autochecksticker(on/off) \n╠⎆ detectmention(on/off)\n╰══════╬╬═══════╯")
                 elif text.lower() == '!self':
-                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !me \n╠⎆ !mymid \n╠⎆ !mypicture \n╠⎆ !myvideo \n !mycover \n╠⎆ !stealcontact(mention) \n╠⎆ !stealmid(mention) \n╠⎆ !stealbio(mention) \n╠⎆ !stealpicture(mention) \n╠⎆ !stealvideoprofile(mention) \n╠⎆ !stealcover(mention) \n╠⎆ !cloneprofile(mention) \n╠⎆ !restoreprofile \n╠⎆ !mention\n╰══════╬╬═══════╯")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !me \n╠⎆ !mymid \n╠⎆ !mypicture \n╠⎆ !myvideo \n╠⎆ !mycover \n╠⎆ !stealcontact(mention) \n╠⎆ !stealmid(mention) \n╠⎆ !stealbio(mention) \n╠⎆ !stealpicture(mention) \n╠⎆ !stealvideoprofile(mention) \n╠⎆ !stealcover(mention) \n╠⎆ !cloneprofile(mention) \n╠⎆ !restoreprofile \n╠⎆ mention\n╰══════╬╬═══════╯")
                 elif text.lower() == '!group':
                     boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╠⎆ !gcreator \n╠⎆ !gpicture \n╠⎆ !glink \n╠⎆ !qr(on/off) \n╠⎆ !glist \n╠⎆ !gmember \n╠⎆ !ginfo \n╠⎆ !crash\n╰══════╬╬═══════╯")
                 elif text.lower() == '!media':
