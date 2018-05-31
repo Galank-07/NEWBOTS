@@ -46,7 +46,7 @@ myProfile["pictureStatus"] = boteaterProfile.pictureStatus
 ### KUMPULAN DEF ##
 
 def restartBot():
-    print (">SLACKBOT SELFBOT TELAH DI RESTART<")
+    print ("●SLΔCҜβΩT●T ⊙TELAH DI RESTART⊙")
     backupData()
     time.sleep(1)
     python = sys.executable
@@ -117,58 +117,58 @@ def lineBot(op):
                     return
 
                 if text.lower() == 'help':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nbotmenu \nsetting \nselfmenu \ngrupmenu \nmedia \ntokenlist \nanimenew \nanimelist")
-                if text.lower() == 'tokenlist':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ntoken mac \ntoken ios \ntoken chrome \ntoken win10 \ntoken desktop \ntoken done")
-                elif text.lower() == 'botmenu':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nrestart \nspeed \nstatus \nabout \nruntime \nerrorlog")
-                elif text.lower() == 'setting':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nautoadd(on/off) \nautoread(on/off) \nautojoin(on/off) \nautoleave(on/off) \nautochecksticker(on/off) \ndetectmention(on/off)")
-                elif text.lower() == 'selfmenu':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \nme \nmymid \nmypicture \nmyvideo \nmycover \nstealcontact(mention) \nstealmid(mention) \nstealbio(mention) \nstealpicture(mention) \nstealvideoprofile(mention) \nstealcover(mention) \ncloneprofile(mention) \nrestoreprofile \nmention")
-                elif text.lower() == 'grupmenu':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ngcreator \ngpicture \nglink \nqr(on/off) \nglist \ngmember \nginfo \ncrash")
-                elif text.lower() == 'media':
-                    boteater.sendMessage(to, "=== SLACKBOT SELFBOT V.1 === \ninstagraminfo(username) \ninstagrampost(username) \nyoutubes(keyword) \nimage(keyword) \nssweb(link)")
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !bot menu \n╠⎆ !setting \n╠⎆ !self \n╠⎆ !group \n╠⎆ !media \n╠⎆ !tokenlist \╠⎆ !nanimenew \n╠⎆ !nanimelist\n╰══════╬╬═══════╯")
+                if text.lower() == '!tokenlist':
+                    boteater.sendMessage(to, "╭══════╬╬═══════╮\n╠⎆ ●SLΔCҜβΩT●\n╰══════╬╬═══════╯\n╭══════╬╬═══════╮\n╠⎆ !token desktopmac \n╠⎆ !token ios \n╠⎆ !token chrome \n╠⎆ !token win10 \n╠⎆ !token desktopwin \n╠⎆ !done\n╰══════╬╬═══════╯")
+                elif text.lower() == '!botmenu':
+                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !restart \n !speed \n !status \n !about \n !runtime \n !errorlog")
+                elif text.lower() == '!setting':
+                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n autoadd(on/off) \n autoread(on/off) \n autojoin(on/off) \n autoleave(on/off) \n autochecksticker(on/off) \n detectmention(on/off)")
+                elif text.lower() == '!self':
+                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !me \n !mymid \n !mypicture \n !myvideo \n !mycover \n !stealcontact(mention) \n !stealmid(mention) \n !stealbio(mention) \n !stealpicture(mention) \n !stealvideoprofile(mention) \n !stealcover(mention) \n !cloneprofile(mention) \n !restoreprofile \n !mention")
+                elif text.lower() == '!group':
+                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !gcreator \n !gpicture \n !glink \n !qr(on/off) \n !glist \n !gmember \n !ginfo \n !crash")
+                elif text.lower() == '!media':
+                    boteater.sendMessage(to, "=== ●SLΔCҜβΩT● === \n !instagraminfo(username) \n !instagrampost(username) \n !youtubes(keyword) \n !image(keyword) \n !ssweb(link)")
 
 ### BOT MENU COMMAND ###
 
                     
-                elif text.lower() == 'speed':
+                elif text.lower() == '!speed':
                     start = time.time()
                     boteater.sendMessage(to, "█▒▒▒▒▒▒▒▒▒...")
                     elapsed_time = time.time() - start
                     boteater.sendMessage(to,format(str(elapsed_time)))
-                elif text.lower() == 'restart':
+                elif text.lower() == '!restart':
                     boteater.sendMessage(to, "SEDANG RESTART")
                     time.sleep(5)
                     boteater.sendMessage(to, "SUKSES!!!")
                     restartBot()
-                elif text.lower() == 'errorlog':
+                elif text.lower() == '!errorlog':
                     with open('error.txt', 'r') as er:
                         error = er.read()
                     boteater.sendMessage(to, str(error))          
-                elif text.lower() == 'runtime':
+                elif text.lower() == '!runtime':
                     timeNow = time.time()
                     runtime = timeNow - botStart
                     runtime = format_timespan(runtime)
                     boteater.sendMessage(to, "BOT ALREADY RUN IN \n {}".format(str(runtime)))
-                elif text.lower() == 'about':
+                elif text.lower() == '!about':
                     try:
                         arr = []
                         saya = "u78643d09e42a36836a17cc918963a8b7"
                         creator = boteater.getContact(saya)
-                        ret_ = ">>> INFO BOT <<<"
-                        ret_ += "\nSELFBOT PYTHON 3 BOTEATER V1.0"
-                        ret_ += "\nBOT INI MILIK SLACKBOT TIDAK UNTUK DI PERJUAL BELIKAN!!! (GRATIS)"
+                        ret_ = "1⊙ INFO BOT ⊙"
+                        ret_ += "\n●TΣΔM SLΔCҜβΩT●"
+                        ret_ += "\nBOT INI MILIK ●SLΔCҜβΩT● TIDAK UNTUK DI PERJUAL BELIKAN!!! (GRATIS)"
                         ret_ += "\nYANG BUAT : {}".format(creator.displayName)
-                        ret_ += "\n===== IKLAN ===== \nSEDIA BERBAGAI MACAM VPS MURAH : https://lazybot.us"
+                        #ret_ += "\n===== IKLAN ===== \nSABUN GIF"
                         boteater.sendMessage(to, str(ret_))
                     except Exception as e:
                         boteater.sendMessage(msg.to, str(e))
-                elif text.lower() == 'status':
+                elif text.lower() == '!status':
                     try:
-                        ret_ = " >>> STATUS BOT <<<"
+                        ret_ = "⊙ STATUS BOT ⊙"
                         if settings["autoAdd"] == True: ret_ += "\nAUTO ADD ACTIVED"
                         else: ret_ += "\nAUTO ADD NOT ACTIVED"
                         if settings["autoJoin"] == True: ret_ += "\nAUTO JOIN ACTIVED"
@@ -185,64 +185,64 @@ def lineBot(op):
                         boteater.sendMessage(to, str(ret_))
                     except Exception as e:
                         boteater.sendMessage(msg.to, str(e))
-                elif text.lower() == 'autoadd on':
+                elif text.lower() == '!autoadd on':
                     settings["autoAdd"] = True
                     boteater.sendMessage(to, "AUTO ADD IS ACTIVED")
-                elif text.lower() == 'autoadd off':
+                elif text.lower() == '!autoadd off':
                     settings["autoAdd"] = False
                     boteater.sendMessage(to, "AUTO ADD IS NOT ACTIVED")
-                elif text.lower() == 'autojoin on':
+                elif text.lower() == '!autojoin on':
                     settings["autoJoin"] = True
                     boteater.sendMessage(to, "AUTO JOIN IS IS ACTIVED")
-                elif text.lower() == 'autojoin off':
+                elif text.lower() == '!autojoin off':
                     settings["autoJoin"] = False
                     boteater.sendMessage(to, "AUTO JOIN IS IS NOT ACTIVED")
-                elif text.lower() == 'autoleave on':
+                elif text.lower() == '!autoleave on':
                     settings["autoLeave"] = True
                     boteater.sendMessage(to, "AUTO LEAVE IS ACTIVED")
-                elif text.lower() == 'autojoin off':
+                elif text.lower() == '!autojoin off':
                     settings["autoLeave"] = False
                     boteater.sendMessage(to, "AUTO LEAVE IS NOT ACTIVED")
-                elif text.lower() == 'autoread on':
+                elif text.lower() == '!autoread on':
                     settings["autoRead"] = True
                     boteater.sendMessage(to, "AUTO READ IS ACTIVED")
-                elif text.lower() == 'autoread off':
+                elif text.lower() == '!autoread off':
                     settings["autoRead"] = False
                     boteater.sendMessage(to, "AUTO READ IS NOT ACTIVED")
-                elif text.lower() == 'autochecksticker on':
+                elif text.lower() == '!autochecksticker on':
                     settings["autochecksticker"] = True
                     boteater.sendMessage(to, "AUTO zautochecksticker IS ACTIVED")
-                elif text.lower() == 'autochecksticker off':
+                elif text.lower() == '!autochecksticker off':
                     settings["autochecksticker"] = False
                     boteater.sendMessage(to, "AUTO zautochecksticker IS NOT ACTIVED")
-                elif text.lower() == 'detectmention on':
+                elif text.lower() == '!detectmention on':
                     settings["datectMention"] = True
                     boteater.sendMessage(to, "DETECT MENTION IS ACTIVED")
-                elif text.lower() == 'detectmention off':
+                elif text.lower() == '!detectmention off':
                     settings["datectMention"] = False
                     boteater.sendMessage(to, "DETECT MENTION IS NOT ACTIVED")
-                elif text.lower() == 'clonecontact':
+                elif text.lower() == '!clonecontact':
                     settings["copy"] = True
                     boteater.sendMessage(to, "SEND CONTACT TO CLONE!!!")
                     
 ### SELFBOT COMMAND ###
                     
-                elif text.lower() == 'me':
+                elif text.lower() == '!me':
                     sendMessageWithMention(to, boteaterMID)
                     boteater.sendContact(to, boteaterMID)
-                elif text.lower() == 'mymid':
+                elif text.lower() == '!mymid':
                     boteater.sendMessage(msg.to,"MID KAMU : " +  msg.from_)
-                elif text.lower() == 'mypicture':
+                elif text.lower() == '!mypicture':
                     me = boteater.getContact(boteaterMID)
                     boteater.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + me.pictureStatus)
-                elif text.lower() == 'myvideo':
+                elif text.lower() == '!myvideo':
                     me = boteater.getContact(boteaterMID)
                     boteater.sendVideoWithURL(msg.to,"http://dl.profile.line-cdn.net/" + me.pictureStatus + "/vp")
-                elif text.lower() == 'mycover':
+                elif text.lower() == '!mycover':
                     me = boteater.getContact(boteaterMID)
                     cover = boteater.getProfileCoverURL(boteaterMID)    
                     boteater.sendImageWithURL(msg.to, cover)
-                elif msg.text.lower().startswith("stealcontact "):
+                elif msg.text.lower().startswith("!stealcontact "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -255,7 +255,7 @@ def lineBot(op):
                             contact = boteater.getContact(ls)
                             mi_d = contact.mid
                             boteater.sendContact(msg.to, mi_d)
-                elif msg.text.lower().startswith("stealmid "):
+                elif msg.text.lower().startswith("!stealmid "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -268,7 +268,7 @@ def lineBot(op):
                         for ls in lists:
                             ret_ += "\n{}" + ls
                         boteater.sendMessage(msg.to, str(ret_))
-                elif msg.text.lower().startswith("stealname "):
+                elif msg.text.lower().startswith("!stealname "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -280,7 +280,7 @@ def lineBot(op):
                         for ls in lists:
                             contact = boteater.getContact(ls)
                             boteater.sendMessage(msg.to, "NAME : \n" + contact.displayName)
-                elif msg.text.lower().startswith("stealbio "):
+                elif msg.text.lower().startswith("!stealbio "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -292,7 +292,7 @@ def lineBot(op):
                         for ls in lists:
                             contact = boteater.getContact(ls)
                             boteater.sendMessage(msg.to, "INFO BIO : \n{}" + contact.statusMessage)
-                elif msg.text.lower().startswith("stealpicture "):
+                elif msg.text.lower().startswith("!stealpicture "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -304,7 +304,7 @@ def lineBot(op):
                         for ls in lists:
                             path = "http://dl.profile.line.naver.jp/" + boteater.getContact(ls).pictureStatus
                             boteater.sendImageWithURL(msg.to, str(path))
-                elif msg.text.lower().startswith("stealvideoprofile "):
+                elif msg.text.lower().startswith("!stealvideoprofile "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -316,7 +316,7 @@ def lineBot(op):
                         for ls in lists:
                             path = "http://dl.profile.line.naver.jp/" + boteater.getContact(ls).pictureStatus + "/vp"
                             boteater.sendImageWithURL(msg.to, str(path))
-                elif msg.text.lower().startswith("stealcover "):
+                elif msg.text.lower().startswith("!stealcover "):
                     if line != None:
                         if 'MENTION' in msg.contentMetadata.keys()!= None:
                             names = re.findall(r'@(\w+)', text)
@@ -329,7 +329,7 @@ def lineBot(op):
                             for ls in lists:
                                 path = boteater.getProfileCoverURL(ls)
                                 boteater.sendImageWithURL(msg.to, str(path))
-                elif msg.text.lower().startswith("cloneprofile "):
+                elif msg.text.lower().startswith("!cloneprofile "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
                         mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -343,7 +343,7 @@ def lineBot(op):
                         except:
                             boteater.sendMessage(msg.to, "Gagal clone member")
                             
-                elif text.lower() == 'restoreprofile':
+                elif text.lower() == '!restoreprofile':
                     try:
                         boteaterProfile.displayName = str(myProfile["displayName"])
                         boteaterProfile.statusMessage = str(myProfile["statusMessage"])
@@ -356,17 +356,17 @@ def lineBot(op):
                         
 #=======### COMMAND GRUP ###
 
-                elif text.lower() == 'crash':
+                elif text.lower() == '!crash':
                     boteater.sendContact(to, "ub621484bd88d2486744123db00551d5e',")
-                elif text.lower() == 'gcreator':
+                elif text.lower() == '!gcreator':
                     group = boteater.getGroup(to)
                     GS = group.creator.mid
                     boteater.sendContact(to, GS)
-                elif text.lower() == 'gpicture':
+                elif text.lower() == '!gpicture':
                     group = boteater.getGroup(to)
                     path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
                     boteater.sendImageWithURL(to, path)
-                elif text.lower() == 'glink':
+                elif text.lower() == '!glink':
                     if msg.toType == 2:
                         group = boteater.getGroup(to)
                         if group.preventedJoinByTicket == False:
@@ -374,7 +374,7 @@ def lineBot(op):
                             boteater.sendMessage(to, ">> LINK GRUP <<<\nhttps://line.me/R/ti/g/{}".format(str(link)))
                         else:
                             boteater.sendMessage(to, "QR NYA DI CLOSE")
-                elif text.lower() == 'qr on':
+                elif text.lower() == '!qr on':
                     if msg.toType == 2:
                         group = boteater.getGroup(to)
                         if group.preventedJoinByTicket == False:
@@ -383,7 +383,7 @@ def lineBot(op):
                             group.preventedJoinByTicket = False
                             boteater.updateGroup(group)
                             boteater.sendMessage(to, "GRUP QR OPENED!!!")
-                elif text.lower() == 'qr off':
+                elif text.lower() == '!qr off':
                     if msg.toType == 2:
                         group = boteater.getGroup(to)
                         if group.preventedJoinByTicket == True:
@@ -392,7 +392,7 @@ def lineBot(op):
                             group.preventedJoinByTicket = True
                             boteater.updateGroup(group)
                             boteater.sendMessage(to, "GRUP QR CLOSED!!!")
-                elif text.lower() == 'ginfo':
+                elif text.lower() == '!ginfo':
                     group = boteater.getGroup(to)
                     try:
                         gCreator = group.creator.displayName
@@ -405,7 +405,7 @@ def lineBot(op):
                         gQr = "OPEN"
                         gTicket = "https://line.me/R/ti/g/{}".format(str(boteater.reissueglink(group.id)))
                     path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                    ret_ = ">>> GRUP INFO <<<"
+                    ret_ = "⊙ GRUP INFO ⊙"
                     ret_ += "\nNAMA GRUP : {}".format(str(group.name))
                     ret_ += "\nCREATOR GRUP : {}".format(str(gCreator))
                     ret_ += "\nJUMBLAH MEMBER : {}".format(str(len(group.members)))
@@ -413,7 +413,7 @@ def lineBot(op):
                     ret_ += "\nLINK JOIN : {}".format(gTicket)
                     boteater.sendMessage(to, str(ret_))
                     boteater.sendImageWithURL(to, path)
-                elif text.lower() == 'gmember':
+                elif text.lower() == '!gmember':
                     if msg.toType == 2:
                         group = boteater.getGroup(to)
                         ret_ = ">>> LIST MEMBER <<<"
@@ -423,9 +423,9 @@ def lineBot(op):
                             no += 1
                         ret_ += "\nTOTAL MEMBER: \n{}".format(str(len(group.members)))
                         boteater.sendMessage(to, str(ret_))
-                elif text.lower() == 'glist':
+                elif text.lower() == '!glist':
                         groups = boteater.groups
-                        ret_ = ">>> LIST GRUP <<<"
+                        ret_ = "⊙ LIST GRUP ⊙"
                         no = 0 + 1
                         for gid in groups:
                             group = boteater.getGroup(gid)
@@ -434,7 +434,7 @@ def lineBot(op):
                         ret_ += "\nTOTAL GRUP : \n{}".format(str(len(groups)))
                         boteater.sendMessage(to, str(ret_))
                         
-                elif text.lower() == 'mention':
+                elif text.lower() == '!mention':
                     group = boteater.getGroup(msg.to)
                     nama = [contact.mid for contact in group.members]
                     k = len(nama)//100
@@ -451,7 +451,7 @@ def lineBot(op):
 
 ###ELIF COMMAND###
                         
-                elif text.lower() == 'kalender':
+                elif text.lower() == '!kalender':
                     tz = pytz.timezone("Asia/Jakarta")
                     timeNow = datetime.now(tz=tz)
                     day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -465,7 +465,7 @@ def lineBot(op):
                         if bln == str(k): bln = bulan[k-1]
                     readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
                     boteater.sendMessage(msg.to, readTime)                 
-                elif "ssweb" in msg.text.lower():
+                elif "!ssweb" in msg.text.lower():
                     sep = text.split(" ")
                     query = text.replace(sep[0] + " ","")
                     with requests.session() as web:
@@ -473,7 +473,7 @@ def lineBot(op):
                         data = r.text
                         data = json.loads(data)
                         boteater.sendImageWithURL(to, data["result"])
-                elif "instagraminfo" in msg.text.lower():
+                elif "!instagraminfo" in msg.text.lower():
                     sep = text.split(" ")
                     search = text.replace(sep[0] + " ","")
                     with requests.session() as web:
@@ -481,7 +481,7 @@ def lineBot(op):
                         r = web.get("https://www.instagram.com/{}/?__a=1".format(search))
                         try:
                             data = json.loads(r.text)
-                            ret_ = (">>> INFO INSTAGRAM {} <<<".format(search))
+                            ret_ = ("⊙ INFO INSTAGRAM {} ⊙".format(search))
                             ret_ += "\nPROFIL : {}".format(str(data["user"]["full_name"]))
                             ret_ += "\nUSERNAME : {}".format(str(data["user"]["username"]))
                             ret_ += "\nSTATUS BIO : {}".format(str(data["user"]["biography"]))
@@ -502,7 +502,7 @@ def lineBot(op):
                             boteater.sendMessage(to, str(ret_))
                         except:
                             boteater.sendMessage(to, "INSTAGRAM TIDAK DI TEMUKAN")
-                elif "instagrampost" in msg.text.lower():
+                elif "!instagrampost" in msg.text.lower():
                     separate = msg.text.split(" ")
                     user = msg.text.replace(separate[0] + " ","")
                     profile = "https://www.instagram.com/" + user
@@ -527,7 +527,7 @@ def lineBot(op):
                                     print (node['display_src'])
                                     boteater.sendImageWithURL(msg.to,node['display_src'])
                             end_cursor = re.search(r'"end_cursor": "([^"]+)"', r.text).group(1)
-                elif "image " in msg.text.lower():
+                elif "!image " in msg.text.lower():
                     separate = msg.text.split(" ")
                     search = msg.text.replace(separate[0] + " ","")
                     with requests.session() as web:
@@ -541,7 +541,7 @@ def lineBot(op):
                             a = items.index(path)
                             b = len(items)
                             boteater.sendImageWithURL(to, str(path))
-                elif "youtubes" in msg.text.lower():
+                elif "!youtube" in msg.text.lower():
                     sep = text.split(" ")
                     search = text.replace(sep[0] + " ","")
                     params = {"search_query": search}
@@ -549,7 +549,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.youtube.com/results", params = params)
                         soup = BeautifulSoup(r.content, "html5lib")
-                        ret_ = ">>> HASIL YOUTUBE <<<"
+                        ret_ = "⊙ HASIL YOUTUBE ⊙"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -560,7 +560,7 @@ def lineBot(op):
                         boteater.sendMessage(to, str(ret_))
                     
 #######################TAMBAHAN###################################
-                elif text.lower() == 'animelist':
+                elif text.lower() == '!animelist':
                     data = {
                         'submit2': ''
                         }
@@ -577,7 +577,7 @@ def lineBot(op):
                         for p in j['result']:
                             juduls.append(p['judul'])
                             links.append(p['link'])
-                        h= ('>>ANIME LIST<<')
+                        h= ('⊙ANIME LIST⊙')
                         number= 1
                         try:
                             for numx in range(1000):
@@ -587,7 +587,7 @@ def lineBot(op):
                         except:
                             boteater.sendMessage(msg.to, h)
                             boteater.sendMessage(msg.to, 'PLEASE TYPE = EPPLIST [NUMBER]')
-                    if text.lower() == 'animenew':
+                    if text.lower() == '!animenew':
                         data = {
                             'submit1': ''
                             }
@@ -604,7 +604,7 @@ def lineBot(op):
                             for p in j['result']:
                                 juduls.append(p['judul'])
                                 links.append(p['link'])
-                            h= ('>>ANIME LIST<<')
+                            h= ('⊙ANIME LIST⊙')
                             number= 1
                             try:
                                 for numx in range(1000):
@@ -614,7 +614,7 @@ def lineBot(op):
                             except:
                                 boteater.sendMessage(msg.to, h)
                                 boteater.sendMessage(msg.to, 'PLEASE TYPE = STREAMEPPZ [NUMBER]')
-                elif "epplist " in msg.text.lower():
+                elif "!epplist " in msg.text.lower():
                     separate = msg.text.split(" ")
                     numf = msg.text.replace(separate[0] + " ","")
                     numzz = int(numf)
@@ -647,7 +647,7 @@ def lineBot(op):
                             for p in j['result']:
                                 juduls.append(p['epp'])
                                 links.append(p['link'])
-                            h= ('>>EPISODE LIST LIST<< \n>>{}<<'.format(xxx))
+                            h= ('⊙EPISODE LIST LIST⊙ \n⊙{}⊙'.format(xxx))
                             number= 1
                             try:
                                 for numx in range(1000):
@@ -659,7 +659,7 @@ def lineBot(op):
                                 boteater.sendMessage(msg.to, 'PLEASE TYPE = STREAMEPP [NUMBER]')
                                 if juduls in ["", "\n", " ",  None]:
                                     boteater.sendMessage(msg.to, 'LINK ANIME IS DIED!!')
-                elif "streamepp " in msg.text.lower():
+                elif "!streamepp " in msg.text.lower():
                     separate = msg.text.split(" ")
                     numf = msg.text.replace(separate[0] + " ","")
                     numzz = int(numf)
@@ -681,7 +681,7 @@ def lineBot(op):
                         r = requests.post(url = 'https://boteater.com/anime/', data = data)
                         link= r.text
                         boteater.sendMessage(msg.to, ">> STREAM ANIME<< \n>> {} << \n{}".format(xxx, link))
-                elif "streameppz " in msg.text.lower():
+                elif "!streameppz " in msg.text.lower():
                     separate = msg.text.split(" ")
                     numf = msg.text.replace(separate[0] + " ","")
                     numzz = int(numf)
@@ -706,7 +706,7 @@ def lineBot(op):
 
 
 
-                elif text.lower() == 'token mac':
+                elif text.lower() == '!token desktopmac':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit4': ''
@@ -715,7 +715,7 @@ def lineBot(op):
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
                     boteater.sendMessage(msg.to, '{}'.format(qr))
-                elif text.lower() == 'token win10':
+                elif text.lower() == '!token win10':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit3': ''
@@ -724,7 +724,7 @@ def lineBot(op):
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
                     boteater.sendMessage(msg.to, '{}'.format(qr))
-                elif text.lower() == 'token ios':
+                elif text.lower() == '!token ios':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit2': ''
@@ -733,7 +733,7 @@ def lineBot(op):
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
                     boteater.sendMessage(msg.to, '{}'.format(qr))
-                elif text.lower() == 'token chrome':
+                elif text.lower() == '!token chrome':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit1': ''
@@ -742,7 +742,7 @@ def lineBot(op):
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
                     boteater.sendMessage(msg.to, '{}'.format(qr))
-                elif text.lower() == 'token desktop':
+                elif text.lower() == '!token desktopwin':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit7': ''
@@ -751,7 +751,7 @@ def lineBot(op):
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
                     boteater.sendMessage(msg.to, '{}'.format(qr))
-                elif text.lower() == 'token done':
+                elif text.lower() == '!done':
                     data = {
                         'nama': '{}'.format(msg._from),
                         'submit5': ''
@@ -759,7 +759,7 @@ def lineBot(op):
                     }
                     post_response = requests.post(url = 'https://boteater.com/sniff/', data = data)
                     qr = post_response.text
-                    boteater.sendMessage(to, "YOUR TOKEN SEND BY PM!!")
+                    boteater.sendMessage(to, "YOUR TOKEN!!")
                     boteater.sendMessage(msg.to, '{}'.format(qr))
                 
             elif msg.contentType == 7:
@@ -767,10 +767,10 @@ def lineBot(op):
                     stk_id = msg.contentMetadata['STKID']
                     stk_ver = msg.contentMetadata['STKVER']
                     pkg_id = msg.contentMetadata['STKPKGID']
-                    ret_ = ">>> INFO STICKER <<<"
-                    ret_ += "\nID STICKER : {}".format(stk_id)
-                    ret_ += "\nLINK STICKER : line://shop/detail/{}".format(pkg_id)
-                    ret_ += "\n>>BOTEATER STICKER DETECTED<<"
+                    ret_ = "⊙ INFO STICKER ⊙"
+                    ret_ += "\n⊙ID STICKER : {}".format(stk_id)
+                    ret_ += "\n⊙LINK STICKER : line://shop/detail/{}".format(pkg_id)
+                    ret_ += "\n⊙●SLΔCҜβΩT● STICKER DETECTED⊙"
                     boteater.sendMessage(to, str(ret_))
                     
             elif msg.contentType == 13:
